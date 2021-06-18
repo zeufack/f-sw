@@ -14,6 +14,15 @@ a {
   text-decoration: none;
 }
 
+i {
+  cursor: pointer;
+  padding-top: 4px;
+}
+
+
+.uk>ul {
+  margin: 0;
+}
 
 input:focus,
 select:focus,
@@ -73,7 +82,7 @@ li {
 /* map */
 
 .map {
-  margin: 10px;
+  margin: 7px;
 }
 
 .map-text {
@@ -171,6 +180,19 @@ li {
   gap: 25px;
 }
 
+/* top user title */
+.title {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+.promesse {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
 .news-header,
 .main-new-description {
   padding: 15px;
@@ -210,9 +232,30 @@ li {
 }
 
 .m-wrapper>header {
-  border: 1px dashed darkslategrey;
+  color: #FFF;
+  background-color: #333;
+  background-color: rgba(0, 0, 0, 0.5);
   display: grid;
   align-items: center;
+  position: relative;
+  padding: 24px 20px
+}
+
+.m-wrapper>header::before {
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-top-color: rgba(0, 0, 0, 0.5);
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  margin-left: -5px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid transparent;
 }
 
 .m-wrapper>header>.title-wrapper {
@@ -287,7 +330,7 @@ li {
 
 /* developpemt indicator */
 
-.l-wrapper>section {
+/* .l-wrapper>section {
   border: 1px dashed salmon;
 
 }
@@ -300,7 +343,7 @@ li {
 .r-wrapper>section {
   border: 1px dashed moccasin;
 
-}
+} */
 
 
 @media(max-width: 360px) {

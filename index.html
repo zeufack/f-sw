@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-
-    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&family=Roboto&display=swap" rel="stylesheet">
     <!-- UIkit CSS -->
     <link
       rel="stylesheet"
@@ -14,6 +14,7 @@
     />
 
     <!-- UIkit JS -->
+    <link rel="stylesheet" href="./styles/main.css" />
 
     <link
       rel="stylesheet"
@@ -50,11 +51,7 @@
     </header>
     <main class="main">
       <div class="l-wrapper simple-grid">
-        <section
-          class="
-            nav-wrapper
-            uk-card uk-card-default"
-        >
+        <section class="nav-wrapper uk-card uk-card-default">
           <nav class="navigation">
             <ul>
               <li class="s-list">
@@ -72,7 +69,13 @@
             </ul>
           </nav>
         </section>
-        <section class="location-wrapper">
+        <section
+          class="
+            location-wrapper
+            uk-card uk-card-default uk-section uk-light uk-background-cover
+          "
+          style="background-image: url(images/hu-chen-60XLoOgwkfA-unsplash.jpg)"
+        >
           <header class="s-header">
             <i class="fas fa-map-marker-alt"></i>
             <div class="title">Location Info</div>
@@ -100,14 +103,14 @@
             </div>
           </div>
         </section>
-        <section class="galerie-wrapper">
+        <section class="galerie-wrapper uk-card uk-card-default">
           <header class="galerie-header s-header">
             <i class="far fa-images"></i>
             <div class="galerie-title">Quelques images</div>
           </header>
 
           <div class="images">
-            <img src="https://fakeimg.pl/300x200/" />
+            <img src="/images/hu-chen-60XLoOgwkfA-unsplash.jpg" />
           </div>
 
           <footer class="image-footer">
@@ -118,19 +121,21 @@
       <div class="m-wrapper simple-grid">
         <header>
           <div class="title-wrapper">
-            <div class="title">Bienvenue a Fonakeukeu,</div>
+            <div class="title">Bienvenue à Fonakeukeu,</div>
             <span class="promesse">
               Lorem ipsum dolor sit amet consectetur!
             </span>
           </div>
         </header>
-        <div class="mnews-wrapper">
+        <div class="mnews-wrapper uk-card uk-card-default">
           <header class="news-header s-header">
             <i class="far fa-newspaper"></i>
             <div class="new-title">A la une Lorem ipsum dolor sit.</div>
           </header>
           <div class="new-barner">
-            <img src="https://fakeimg.pl/300x200/" />
+            <img
+              src="/images/capturing-the-human-heart-TrhLCn1abMU-unsplash.jpg"
+            />
           </div>
           <div class="main-new-description">
             <div class="new-title smargin-bottom">
@@ -169,7 +174,7 @@
         </div>
       </div>
       <div class="r-wrapper simple-grid">
-        <section class="notices-wrapper box-pad-min">
+        <section class="notices-wrapper box-pad-min uk-card uk-card-default">
           <header class="notcie-header s-header">
             <i class="fas fa-assistive-listening-systems"></i>
             <div class="notice-title">TOWN NOTICES</div>
@@ -186,16 +191,27 @@
             <a href="">See all notice </a>
           </footer>
         </section>
-        <section class="importent-envent-wrapper">
+        <section
+          class="
+            importent-envent-wrapper
+            uk-card
+            uk-card-default
+            uk-card
+            uk-card-default
+            uk-section
+            uk-light
+            uk-background-cover
+          "
+          style="background-image: url(images/hu-chen-60XLoOgwkfA-unsplash.jpg)">
           <header class="important-envet-header s-header">
             <div class="important-envent-title">Lorem, ipsum dolor.</div>
           </header>
           <div class="important-event-barner">
-            <img src="https://fakeimg.pl/300x200/" />
+            <!-- <img src="/images/alex-perez-R8Hco_-WcxQ-unsplash.jpg" /> -->
           </div>
           <footer class="important-envet-header">Lorem, ipsum dolor.</footer>
         </section>
-        <section class="document-wrapper box-pad-min">
+        <section class="document-wrapper box-pad-min uk-card uk-card-default">
           <header class="document-header s-header">
             <i class="far fa-file-pdf"></i>
             <div class="document-title">Lorem ipsum dolor sit.</div>
@@ -212,7 +228,9 @@
             <a href="#">see all documents</a>
           </footer>
         </section>
-        <section class="upcoming-event-wrapper box-pad-min">
+        <section
+          class="upcoming-event-wrapper box-pad-min uk-card uk-card-default"
+        >
           <header class="event-header s-header">
             <i class="far fa-calendar-alt"></i>
             <div class="event-title">Document Lorem ipsum.</div>
